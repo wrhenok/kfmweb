@@ -15,10 +15,7 @@ const routes = [
                 component: () => import('../views/Topic.vue')
             },
             
-            {
-                path: '/document',
-                component: () => import('../views/Document.vue')
-            },
+           
             {
                 path: '/about',
                 component: () => import('../views/About.vue')
@@ -32,6 +29,11 @@ const routes = [
     {
         path: '/apply',
         component: () => import('../views/Apply.vue')
+    },
+    
+    {
+        path: '/document',
+        component: () => import('../views/Document.vue')
     },
     
 ]

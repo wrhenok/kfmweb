@@ -10,11 +10,11 @@ const routes = [
                 path: '/',
                 component: () => import('../views/Index.vue')
             },
-            {
-                path: '/topic',
-                component: () => import('../views/Topic.vue')
-            },
             
+            {
+                path: '/apply',
+                component: () => import('../views/Apply.vue')
+            },
            
             {
                 path: '/about',
@@ -27,8 +27,8 @@ const routes = [
         component: () => import('../views/Login.vue')
     },
     {
-        path: '/apply',
-        component: () => import('../views/Apply.vue')
+        path: '/topic',
+        component: () => import('../views/Topic.vue')
     },
     
     {

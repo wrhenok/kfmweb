@@ -1,17 +1,16 @@
 <template>
     <div class="main_section">
-        <div style="text-align: center;">
+        <div style="text-align: center">
             <h1>everyone-llm</h1>
         </div>
 
         <div class="container">
-
-            <div class="chat_container">
+            <div class="row chat_container">
                 <div class="col-sm-3 hidden-xs chat_sidebar">
                     <!-- <div class="row" style="padding: 10px;">
                         Sidebar
                     </div> -->
-                    <div class="hidden lg:fixed lg:inset-y-0 lg:z-40 lg:flex lg:w-65 lg:flex-col">
+                    <div class="hidden lg:fixed lg:inset-y-0 lg:z-50 lg:flex lg:w-66 lg:flex-col">
                         <!-- Sidebar component, swap this element with another sidebar if you like -->
                         <div class="flex grow flex-col gap-y-5 overflow-y-auto border-r border-gray-200 px-6 pb-4">
                             <div class="flex h-16 shrink-0 items-center">
@@ -39,6 +38,20 @@
                                             </li>
                                         </ul>
                                     </li>
+                                    <!-- <li>
+              <div class="text-xs font-semibold leading-6 text-gray-400">Your teams</div>
+              <ul role="list" class="-mx-2 mt-2 space-y-1">
+                <li v-for="team in teams" :key="team.name">
+                  <a :href="team.href"
+                    :class="[team.current ? 'bg-gray-50 text-indigo-600' : 'text-gray-700 hover:text-indigo-600 hover:bg-gray-50', 'group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold']">
+                    <span
+                      :class="[team.current ? 'text-indigo-600 border-indigo-600' : 'text-gray-400 border-gray-200 group-hover:border-indigo-600 group-hover:text-indigo-600', 'flex h-6 w-6 shrink-0 items-center justify-center rounded-lg border text-[0.625rem] font-medium bg-white']">{{
+                        team.initial }}</span>
+                    <span class="truncate">{{ team.name }}</span>
+                  </a>
+                </li>
+              </ul>
+            </li> -->
                                     <li class="mt-auto">
                                         <div
                                             class="group -mx-2 flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-gray-50 hover:text-indigo-600">
@@ -52,28 +65,32 @@
                             </nav>
                         </div>
                     </div>
+
+
                 </div>
                 <!--Ads_sidebar-->
 
-
                 <div class="col-sm-7 message_section">
-                    <div class="row" style="background-image:url(http://cdn.css-tricks.com/images/forums-bg.png)">
+                    <div style="
+              background-image: url(http://cdn.css-tricks.com/images/forums-bg.png);
+            ">
                         <div class="new_message_head">
                             <div class="pull-left">
                                 <div class="dropdown">
                                     <button class="dropdown-toggle" type="button" id="dropdownMenu3"
                                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                        <i class="fa fa-weixin" aria-hidden="true"></i> Conversations 
+                                        <FontAwesomeIcon :icon="faComments" />
+                                        Conversations
                                         <span class="caret"></span>
                                     </button>
                                     <ul class="dropdown-menu dropdown-menu-left" aria-labelledby="dropdownMenu3">
                                         <li>
                                             <div id="custom-search-input">
                                                 <div class="input-group col-md-12">
-                                                    <input type="text" class=" search-query form-control"
+                                                    <input type="text" class="search-query form-control"
                                                         placeholder="Conversation" />
                                                     <button class="btn btn-danger" type="button">
-                                                        <span class=" glyphicon glyphicon-search"></span>
+                                                        <span class="glyphicon glyphicon-search"></span>
                                                     </button>
                                                 </div>
                                             </div>
@@ -158,9 +175,11 @@
                             <div class="pull-right">
                                 <div class="dropdown">
                                     <button class="dropdown-toggle" type="button" id="dropdownMenu1"
-                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i
-                                            class="fa fa-cogs" aria-hidden="true"></i> Setting <span
-                                            class="caret"></span></button>
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <FontAwesomeIcon :icon="faGear" />
+                                        Setting
+                                        <span class="caret"></span>
+                                    </button>
                                     <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
                                         <li><a href="#">Action</a></li>
                                         <li><a href="#">Profile</a></li>
@@ -175,157 +194,234 @@
                             <ul class="list-unstyled">
                                 <li class="left clearfix partner_chat">
                                     <span class="chat-img1 pull-left">
-                                        <img src="https://lh3.googleusercontent.com/-SEkCoiLsxMk/AAAAAAAAAAI/AAAAAAAAAAA/AAyYBF4DUk-ifOFiwhGXBoOheEF7P0ZW1g/s32-c-mo/photo.jpg"
-                                            alt="User Avatar" class="img-circle">
+                                        <img src="https://s2.loli.net/2024/10/03/kybWGHYBzMLcapD.png" alt="User Avatar"
+                                            class="img-circle" />
                                     </span>
 
                                     <div class="chat-body1 clearfix">
                                         <p>
-                                            <span style="color:rgb(107,203,239); display:block">Yo McMoney</span>
-
-                                            <span style="display:block; padding:5px 0px 5px 0px;">
-                                                Contrary to popular belief, Lorem Ipsum is not simply random text. It
-                                                has roots in a piece of classical Latin literature
-                                                from 45 BC, making it over 2000 years old. Richard McClintock, a Latin
-                                                professor at Hampden-Sydney College in
-                                                Virginia.
+                                            <span style="color: rgb(107, 203, 239); display: block">Yo McMoney</span>
+                                            <span style="display: block; padding: 5px 0px 5px 0px">
+                                                Contrary to popular belief, Lorem Ipsum is not simply
+                                                random text. It has roots in a piece of classical Latin
+                                                literature from 45 BC, making it over 2000 years old.
+                                                Richard McClintock, a Latin professor at Hampden-Sydney
+                                                College in Virginia.
                                             </span>
 
-                                            <span
-                                                style="font-size:0.85em; color:grey; display:block; float:right;">09:40PM</span>
+                                            <span style="
+                          font-size: 0.85em;
+                          color: grey;
+                          display: block;
+                          float: right;
+                        ">09:40PM</span>
                                         </p>
                                     </div>
                                 </li>
 
-                                <li class="left clearfix partner_chat">
-                                    <span class="chat-img1 pull-left">
-                                        <img src="https://lh3.googleusercontent.com/-SEkCoiLsxMk/AAAAAAAAAAI/AAAAAAAAAAA/AAyYBF4DUk-ifOFiwhGXBoOheEF7P0ZW1g/s32-c-mo/photo.jpg"
-                                            alt="User Avatar" class="img-circle">
+                                <li class="right clearfix partner_chat">
+                                    <span class="chat-img1 pull-right">
+                                        <img src="https://s2.loli.net/2024/10/03/kybWGHYBzMLcapD.png" alt="User Avatar"
+                                            class="img-circle" />
                                     </span>
 
                                     <div class="chat-body1 clearfix">
-
                                         <p>
-                                            <span style="display:block; padding:5px 0px 5px 0px;">
-                                                Contrary to popular belief, Lorem Ipsum is not simply random text. It
-                                                has roots in a piece of classical Latin literature
-                                                from 45 BC, making it over 2000 years old. Richard McClintock, a Latin
-                                                professor at Hampden-Sydney College in
-                                                Virginia.
+                                            <span style="display: block; padding: 5px 0px 5px 0px">
+                                                Contrary to popular belief, Lorem Ipsum is not simply
+                                                random text. It has roots in a piece of classical Latin
+                                                literature from 45 BC, making it over 2000 years old.
+                                                Richard McClintock, a Latin professor at Hampden-Sydney
+                                                College in Virginia.
                                             </span>
 
-                                            <span
-                                                style="font-size:0.85em; color:grey; display:block; float:right;">09:40PM</span>
-                                        </p>
-
-                                    </div>
-                                </li>
-
-                                <li class="left clearfix partner_chat">
-                                    <span class="chat-img1 pull-left">
-                                        <img src="https://lh3.googleusercontent.com/-SEkCoiLsxMk/AAAAAAAAAAI/AAAAAAAAAAA/AAyYBF4DUk-ifOFiwhGXBoOheEF7P0ZW1g/s32-c-mo/photo.jpg"
-                                            alt="User Avatar" class="img-circle">
-                                    </span>
-
-                                    <div class="chat-body1 clearfix">
-                                        <div class="image_chat">
-                                            <span style="color:rgb(107,203,239); display:block">Yo McMoney</span>
-
-                                            <div class="image_thumb" style="padding:5px 0px 5px 0px;">
-                                                <img src="./image1.jpg" class="img-responsive" alt="image1">
-                                            </div>
-
-                                            <span
-                                                style="font-size:0.85em; color:grey; display:block; float:right;">09:40PM</span>
-                                        </div>
-                                    </div>
-                                </li>
-
-                                <li class="left clearfix admin_chat">
-                                    <span class="chat-img1 pull-right">
-                                        <img src="https://lh3.googleusercontent.com/-SEkCoiLsxMk/AAAAAAAAAAI/AAAAAAAAAAA/AAyYBF4DUk-ifOFiwhGXBoOheEF7P0ZW1g/s32-c-mo/photo.jpg"
-                                            alt="User Avatar" class="img-circle">
-                                    </span>
-
-                                    <div class="chat-body1 clearfix">
-                                        <div class="image_chat">
-                                            <span style="color:rgb(107,203,239); display:block; text-align:right">Yo
-                                                McMoney</span>
-
-                                            <div class="image_thumb" style="padding:5px 0px 5px 0px; display:block;">
-                                                <img src="./image1.jpg" class="img-responsive" alt="image1">
-                                            </div>
-
-                                            <span
-                                                style="font-size:0.85em; color:grey; display:block; float:right;">09:40PM</span>
-                                        </div>
-                                    </div>
-                                </li>
-
-                                <li class="left clearfix partner_chat">
-                                    <span class="chat-img1 pull-left">
-                                        <img src="https://lh3.googleusercontent.com/-SEkCoiLsxMk/AAAAAAAAAAI/AAAAAAAAAAA/AAyYBF4DUk-ifOFiwhGXBoOheEF7P0ZW1g/s32-c-mo/photo.jpg"
-                                            alt="User Avatar" class="img-circle">
-                                    </span>
-
-                                    <div class="chat-body1 clearfix">
-                                        <p>
-                                            <span style="display:block; padding:5px 0px 5px 0px;">Contrary to popular
-                                                belief</span>
-
-                                            <span
-                                                style="font-size:0.85em; color:grey; display:block; float:right;">09:40PM</span>
+                                            <span style="
+                          font-size: 0.85em;
+                          color: grey;
+                          display: block;
+                          float: right;
+                        ">09:40PM</span>
                                         </p>
                                     </div>
                                 </li>
 
-                                <li class="left clearfix admin_chat">
-                                    <span class="chat-img1 pull-right">
-                                        <img src="https://lh3.googleusercontent.com/-SEkCoiLsxMk/AAAAAAAAAAI/AAAAAAAAAAA/AAyYBF4DUk-ifOFiwhGXBoOheEF7P0ZW1g/s32-c-mo/photo.jpg"
-                                            alt="User Avatar" class="img-circle">
-                                    </span>
+                                <!-- <li class="left clearfix partner_chat">
+                  <span class="chat-img1 pull-left">
+                    <img
+                      src="https://s2.loli.net/2024/10/03/kybWGHYBzMLcapD.png"
+                      alt="User Avatar"
+                      class="img-circle"
+                    />
+                  </span>
 
-                                    <div class="chat-body1 clearfix">
-                                        <p>
-                                            <span style="display:block; padding: 5px 0px 5px 0px;">
-                                                Contrary to popular belief, Lorem Ipsum is not simply random text. It
-                                                has roots in a piece of classical Latin literature
-                                                from 45 BC, making it over 2000 years old. Richard McClintock, a Latin
-                                                professor at Hampden-Sydney College in
-                                                Virginia.
-                                            </span>
+                  <div class="chat-body1 clearfix">
+                    <div class="image_chat">
+                      <span style="color: rgb(107, 203, 239); display: block"
+                        >Yo McMoney</span
+                      >
 
-                                            <span
-                                                style="font-size:0.85em; color:grey; display:block; float:right;">09:40PM</span>
-                                        </p>
-                                    </div>
-                                </li>
+                      <div class="image_thumb" style="padding: 5px 0px 5px 0px">
+                        <img
+                            src="https://s2.loli.net/2024/10/03/kybWGHYBzMLcapD.png"
+                          class="img-responsive"
+                          alt="image1"
+                        />
+                      </div>
 
-                                <li class="left clearfix admin_chat">
-                                    <span class="chat-img1 pull-right">
-                                        <img src="https://lh3.googleusercontent.com/-SEkCoiLsxMk/AAAAAAAAAAI/AAAAAAAAAAA/AAyYBF4DUk-ifOFiwhGXBoOheEF7P0ZW1g/s32-c-mo/photo.jpg"
-                                            alt="User Avatar" class="img-circle">
-                                    </span>
+                      <span
+                        style="
+                          font-size: 0.85em;
+                          color: grey;
+                          display: block;
+                          float: right;
+                        "
+                        >09:40PM</span
+                      >
+                    </div>
+                  </div>
+                </li>
 
-                                    <div class="chat-body1 clearfix">
-                                        <p>
-                                            <span style="display:block; padding:5px 0px 5px 0px;">Contrary to popular
-                                                belief.</span>
+                <li class="right clearfix admin_chat">
+                  <span class="chat-img1 pull-right">
+                    <img
+                      src="https://s2.loli.net/2024/10/03/kybWGHYBzMLcapD.png"
+                      alt="User Avatar"
+                      class="img-circle"
+                    />
+                  </span>
 
-                                            <span
-                                                style="font-size:0.85em; color:grey; display:block; float:right;">09:40PM</span>
-                                        </p>
-                                    </div>
-                                </li>
+                  <div class="chat-body1 clearfix">
+                    <div class="image_chat">
+                      <span
+                        style="
+                          color: rgb(107, 203, 239);
+                          display: block;
+                          text-align: right;
+                        "
+                        >Yo McMoney</span
+                      >
+
+                      <div
+                        class="image_thumb"
+                        style="padding: 5px 0px 5px 0px; display: block"
+                      >
+                        <img
+                          src="./image1.jpg"
+                          class="img-responsive"
+                          alt="image1"
+                        />
+                      </div>
+
+                      <span
+                        style="
+                          font-size: 0.85em;
+                          color: grey;
+                          display: block;
+                          float: right;
+                        "
+                        >09:40PM</span
+                      >
+                    </div>
+                  </div>
+                </li>
+
+                <li class="left clearfix partner_chat">
+                  <span class="chat-img1 pull-left">
+                    <img
+                      src="https://s2.loli.net/2024/10/03/kybWGHYBzMLcapD.png"
+                      alt="User Avatar"
+                      class="img-circle"
+                    />
+                  </span>
+
+                  <div class="chat-body1 clearfix">
+                    <p>
+                      <span style="display: block; padding: 5px 0px 5px 0px"
+                        >Contrary to popular belief</span
+                      >
+
+                      <span
+                        style="
+                          font-size: 0.85em;
+                          color: grey;
+                          display: block;
+                          float: right;
+                        "
+                        >09:40PM</span
+                      >
+                    </p>
+                  </div>
+                </li>
+
+                <li class="right clearfix admin_chat">
+                  <span class="chat-img1 pull-right">
+                    <img
+                      src="https://s2.loli.net/2024/10/03/kybWGHYBzMLcapD.png"
+                      alt="User Avatar"
+                      class="img-circle"
+                    />
+                  </span>
+
+                  <div class="chat-body1 clearfix">
+                    <p>
+                      <span style="display: block; padding: 5px 0px 5px 0px">
+                        Contrary to popular belief, Lorem Ipsum is not simply
+                        random text. It has roots in a piece of classical Latin
+                        literature from 45 BC, making it over 2000 years old.
+                        Richard McClintock, a Latin professor at Hampden-Sydney
+                        College in Virginia.
+                      </span>
+
+                      <span
+                        style="
+                          font-size: 0.85em;
+                          color: grey;
+                          display: block;
+                          float: right;
+                        "
+                        >09:40PM</span
+                      >
+                    </p>
+                  </div>
+                </li>
+
+                <li class="left clearfix admin_chat">
+                  <span class="chat-img1 pull-right">
+                    <img
+                      src="https://s2.loli.net/2024/10/03/kybWGHYBzMLcapD.png"
+                      alt="User Avatar"
+                      class="img-circle"
+                    />
+                  </span>
+
+                  <div class="chat-body1 clearfix">
+                    <p>
+                      <span style="display: block; padding: 5px 0px 5px 0px"
+                        >Contrary to popular belief.</span
+                      >
+
+                      <span
+                        style="
+                          font-size: 0.85em;
+                          color: grey;
+                          display: block;
+                          float: right;
+                        "
+                        >09:40PM</span
+                      >
+                    </p>
+                  </div>
+                </li> -->
                             </ul>
                         </div>
                         <!--chat_area-->
 
-                        <div class="col-sm-8 message_write">
+                        <div class="message_write">
                             <textarea class="form-control" placeholder="type a message"></textarea>
-                            <div class="chat_bottom"><a href="#" class="pull-left upload_btn">
-                                <i
-                                        class="fa fa-paperclip fa-2x" aria-hidden="true"></i> Add Files</a>
+                            <div class="chat_bottom">
+                                <a href="#" class="pull-left upload_btn">
+                                    <FontAwesomeIcon :icon="faPaperclip" />Add Files
+                                </a>
                                 <a href="#" class="pull-right btn btn-success">Send</a>
                             </div>
                         </div>
@@ -334,9 +430,7 @@
                 <!--message_section-->
 
                 <div class="col-sm-2 hidden-xs chat_sidebar">
-                    <div class="row" style="text-align: center">
-                        Ads..sidebar
-                    </div>
+                    <div class="row" style="text-align: center;">Ads..sidebar</div>
                 </div>
                 <!--Ads_sidebar-->
             </div>
@@ -345,25 +439,30 @@
 </template>
 
 <script setup>
-import { Cog6ToothIcon } from '@heroicons/vue/24/outline'
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-
+import { faComments, faGear, faPaperclip } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+import { Cog6ToothIcon } from "@heroicons/vue/24/outline";
 //对话
 const chatSession = [
-  { name: 'Team', nowTime: "昨天", chatHistory: [{}], current: false },
-  { name: 'Projects', nowTime: "今天", chatHistory: [{}], current: false },
-]
+    { name: "Team", nowTime: "昨天", chatHistory: [{}], current: false },
+    { name: "Projects", nowTime: "今天", chatHistory: [{}], current: false },
+];
 
 const addChat = () => {
-  console.log('addChat')
-  chatSession.push({ name: 'Team', nowTime: "昨天", chatHistory: [{}], current: false })
-}
+    console.log("addChat");
+    chatSession.push({
+        name: "Team",
+        nowTime: "昨天",
+        chatHistory: [{}],
+        current: false,
+    });
+    console.log(chatSession);
+};
 </script>
 
 <style scoped>
 body {
     max-height: 100vh !important;
-
 }
 
 main_container {
@@ -374,12 +473,11 @@ div {
     background-color: white;
 }
 
-div.container {
+/* div.container {
     margin: 0px;
     padding: 0px;
     width: 100%;
-
-}
+} */
 
 div.chat_container {
     display: flex;
@@ -402,7 +500,7 @@ div.chat_container {
 }
 
 #custom-search-input::before {
-    content: '';
+    content: "";
     position: absolute;
     z-index: -1;
     height: 100%;
@@ -432,7 +530,6 @@ input.search-query.form-control {
     box-shadow: none;
     border-radius: 0px;
     border-color: rgba(0, 0, 0, 0);
-
 }
 
 input.search-query.form-control:focus {
@@ -642,6 +739,7 @@ div.chat-body.clearfix {
 .new_message_head button {
     background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
     border: medium none;
+
 }
 
 .new_message_head {
@@ -663,10 +761,10 @@ div.chat-body.clearfix {
 }
 
 .new_message_head::before {
-    content: '';
+    content: "";
     position: absolute;
     z-index: -1;
-    height: 100%;
+    /* height: 100%; */
     width: 100%;
     overflow: hidden;
     top: 0px;
@@ -686,7 +784,7 @@ div.chat-body.clearfix {
 }
 
 .message_section .row {
-    height: 99vh;
+    height: 90vh;
 }
 
 .chat_area {
@@ -754,7 +852,7 @@ div.chat-body.clearfix {
 
 .partner_chat .chat-body1.clearfix .image_chat::before {
     display: block;
-    content: '';
+    content: "";
     width: 10px;
     height: 10px;
     background-color: rgba(245, 243, 243, 0.9);
@@ -778,7 +876,7 @@ div.chat-body.clearfix {
 
 .admin_chat .chat-body1.clearfix .image_chat::before {
     display: block;
-    content: '';
+    content: "";
     width: 10px;
     height: 10px;
     background-color: rgba(245, 243, 243, 0.9);
@@ -798,7 +896,7 @@ div.chat-body.clearfix {
 
 .admin_chat .chat-body1.clearfix p::before {
     display: block;
-    content: '';
+    content: "";
     width: 10px;
     height: 10px;
     background-color: rgba(245, 243, 243, 0.9);
@@ -808,10 +906,9 @@ div.chat-body.clearfix {
     top: -7px;
 }
 
-
 .partner_chat .chat-body1.clearfix p::before {
     display: block;
-    content: '';
+    content: "";
     width: 10px;
     height: 10px;
     background-color: rgba(245, 243, 243, 0.9);
@@ -834,13 +931,12 @@ ul.dropdown-menu {
 
 .message_write {
     background: #f5f3f3 none repeat scroll 0 0;
-    /* float: left; */
+    float: left;
     padding: 15px 15px 15px 15px;
-    width: 55%;
+    width: 60%;
     position: absolute;
     bottom: 0px;
     margin-top: 0px;
-
 }
 
 .message_write textarea.form-control {
@@ -848,9 +944,9 @@ ul.dropdown-menu {
     border-radius: 0px;
     border-color: #dddddd;
     box-shadow: none;
-    -webkit-transition: box-shadow .25s ease-in-out;
-    -moz-transition: box-shadow .25s ease-in-out;
-    transition: box-shadow .25s ease-in-out;
+    -webkit-transition: box-shadow 0.25s ease-in-out;
+    -moz-transition: box-shadow 0.25s ease-in-out;
+    transition: box-shadow 0.25s ease-in-out;
     resize: none;
     overflow-y: auto;
     overflow-x: hidden;
@@ -868,19 +964,17 @@ ul.dropdown-menu {
     box-shadow: 0px 5px 8px 2px rgba(25, 25, 25, 0.4);
 }
 
+
 a.pull-right.btn.btn-success {
     background-color: #777777;
     border-radius: 0px;
     border: none;
+    border-right: 0px;
 }
 
 a.pull-right.btn.btn-success:hover {
     background-color: #dddddd;
     color: #777777;
-}
-
-i.fa.fa-paperclip.fa-2x {
-    transform: rotateY(180deg);
 }
 
 .chat_bottom {
@@ -896,7 +990,7 @@ i.fa.fa-paperclip.fa-2x {
 
 .sub_menu_>li a,
 .sub_menu_>li {
-    float: left;
+    /* float: left; */
     width: 100%;
 }
 

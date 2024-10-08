@@ -96,9 +96,9 @@
         <!-- 侧边栏部分 -->
         <div class="hidden lg:fixed lg:inset-y-0 lg:z-50 lg:flex lg:w-72 lg:flex-col">
             <!-- Sidebar component, swap this element with another sidebar if you like -->
-            <div class="flex grow flex-col gap-y-5 overflow-y-auto border-r border-gray-200 px-6 pb-4">
+            <div class="flex grow flex-col gap-y-5 overflow-y-auto border-r border-gray-200 pr-6 pb-4">
                 <div class="flex h-16 shrink-0 items-center">
-                    <h3>开发喵AI（3IN1）</h3>
+                    <h3>开发喵AI）</h3>
                     <img class="h-8 w-auto" src="../assets/logo/logo.png" alt="Your Company" />
                 </div>
                 <nav class="flex flex-1 flex-col">
@@ -127,9 +127,9 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="mt-auto">
+                        <li class="absolute bottom-0  w-4/5 bg-white">
                             <div
-                                class="group -mx-2 flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-gray-50 hover:text-indigo-600">
+                                class="text-gray-700 w-full mb-3  cursor-pointer hover:text-gray-600 hover:bg-indigo-300 group -mx-2 space-y-1 flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
                                 <Cog6ToothIcon class="h-6 w-6 shrink-0 text-gray-400 group-hover:text-indigo-600"
                                     aria-hidden="true" />
                                 Settings
@@ -201,334 +201,49 @@
                 </div>
 
                 <main>
-                    <div class="w-full h-full">
-                        <div class="pb-1">
-                            <div class="flex flex-col items-center px-6 pb-10 pt-4">
-                                <div class="flex flex-row-reverse w-full pb-2">
-                                    <div
-                                        class="text-blue-600 border-blue-600 flex h-10 w-10 ml-4 items-center justify-center rounded-lg text-[1rem] bg-blue-100">
-                                        K
-                                    </div>
-                                    <div class="human-message">
-                                        <p>
-                                            What is a GenerativeAI?Use these Tailwind CSS sidebar
-                                            layout examples to build interfaces where the primary
-                                            navigation is positioned to the side. These layouts are
-                                            designed and built by the Tailwind CSS team, and include a
-                                            variety of different styles. All layouts are fully
-                                            responsive and optimized for desktop, tablet, and mobile
-                                            screen sizes.
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div class="w-full pb-2 flex">
-                                    <div class="flex mr-4 h-10 w-10 items-center justify-center rounded-lg bg-gray-400">
-                                        <svg xmlns="http://www.w3.org/2000/svg" height="22" viewBox="0 -960 960 960"
-                                            width="22">
-                                            <path
-                                                d="M147-376q-45 0-76-31.208Q40-438.417 40-483t31.208-75.792Q102.417-590 147-590v-123q0-24 18-42t42-18h166q0-45 31.208-76 31.209-31 75.792-31t75.792 31.208Q587-817.583 587-773h166q24 0 42 18t18 42v123q45 0 76 31.208 31 31.209 31 75.792t-31.208 75.792Q857.583-376 813-376v196q0 24-18 42t-42 18H207q-24 0-42-18t-18-42v-196Zm196.235-100Q360-476 371.5-487.735q11.5-11.736 11.5-28.5Q383-533 371.265-544.5q-11.736-11.5-28.5-11.5Q326-556 314.5-544.265q-11.5 11.736-11.5 28.5Q303-499 314.735-487.5q11.736 11.5 28.5 11.5Zm274 0Q634-476 645.5-487.735q11.5-11.736 11.5-28.5Q657-533 645.265-544.5q-11.736-11.5-28.5-11.5Q600-556 588.5-544.265q-11.5 11.736-11.5 28.5Q577-499 588.735-487.5q11.736 11.5 28.5 11.5ZM312-285h336v-60H312v60ZM207-180h546v-533H207v533Zm0 0v-533 533Z"
-                                                fill="#FFF" />
-                                        </svg>
-                                    </div>
-                                    <div class="w-fit max-w-[75%] p-4 bg-[#f2f2f2] text-[#737373] rounded-md text-sm font-normal leading-5">
-                                        <p>
-                                            Use these Tailwind CSS sidebar layout examples to build
-                                            interfaces where the primary navigation is positioned to
-                                            the side. These layouts are designed and built by the
-                                            Tailwind CSS team, and include a variety of different
-                                            styles. All layouts are fully responsive and optimized for
-                                            desktop, tablet, and mobile screen sizes.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="pb-1">
-                            <div class="flex flex-col items-center px-6 pb-10 pt-4">
-                                <div class="w-full pb-2">
-                                    <div class="human-message">
-                                        <p>What is a GenerativeAI?</p>
-                                    </div>
-                                </div>
-
-                                <div class="w-full pb-2 reply-message">
-                                    <div class="bot-icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" height="22" viewBox="0 -960 960 960"
-                                            width="22">
-                                            <path
-                                                d="M147-376q-45 0-76-31.208Q40-438.417 40-483t31.208-75.792Q102.417-590 147-590v-123q0-24 18-42t42-18h166q0-45 31.208-76 31.209-31 75.792-31t75.792 31.208Q587-817.583 587-773h166q24 0 42 18t18 42v123q45 0 76 31.208 31 31.209 31 75.792t-31.208 75.792Q857.583-376 813-376v196q0 24-18 42t-42 18H207q-24 0-42-18t-18-42v-196Zm196.235-100Q360-476 371.5-487.735q11.5-11.736 11.5-28.5Q383-533 371.265-544.5q-11.736-11.5-28.5-11.5Q326-556 314.5-544.265q-11.5 11.736-11.5 28.5Q303-499 314.735-487.5q11.736 11.5 28.5 11.5Zm274 0Q634-476 645.5-487.735q11.5-11.736 11.5-28.5Q657-533 645.265-544.5q-11.736-11.5-28.5-11.5Q600-556 588.5-544.265q-11.5 11.736-11.5 28.5Q577-499 588.735-487.5q11.736 11.5 28.5 11.5ZM312-285h336v-60H312v60ZM207-180h546v-533H207v533Zm0 0v-533 533Z"
-                                                fill="#FFF" />
-                                        </svg>
-                                    </div>
-                                    <div class="bot-message">
-                                        <p>hello</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="pb-1">
-                            <div class="flex flex-col items-center px-6 pb-10 pt-4">
-                                <div class="w-full pb-2">
-                                    <div class="human-message">
-                                        <p>What is a GenerativeAI?</p>
-                                    </div>
-                                </div>
-
-                                <div class="w-full pb-2 reply-message">
-                                    <div class="bot-icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" height="22" viewBox="0 -960 960 960"
-                                            width="22">
-                                            <path
-                                                d="M147-376q-45 0-76-31.208Q40-438.417 40-483t31.208-75.792Q102.417-590 147-590v-123q0-24 18-42t42-18h166q0-45 31.208-76 31.209-31 75.792-31t75.792 31.208Q587-817.583 587-773h166q24 0 42 18t18 42v123q45 0 76 31.208 31 31.209 31 75.792t-31.208 75.792Q857.583-376 813-376v196q0 24-18 42t-42 18H207q-24 0-42-18t-18-42v-196Zm196.235-100Q360-476 371.5-487.735q11.5-11.736 11.5-28.5Q383-533 371.265-544.5q-11.736-11.5-28.5-11.5Q326-556 314.5-544.265q-11.5 11.736-11.5 28.5Q303-499 314.735-487.5q11.736 11.5 28.5 11.5Zm274 0Q634-476 645.5-487.735q11.5-11.736 11.5-28.5Q657-533 645.265-544.5q-11.736-11.5-28.5-11.5Q600-556 588.5-544.265q-11.5 11.736-11.5 28.5Q577-499 588.735-487.5q11.736 11.5 28.5 11.5ZM312-285h336v-60H312v60ZM207-180h546v-533H207v533Zm0 0v-533 533Z"
-                                                fill="#FFF" />
-                                        </svg>
-                                    </div>
-                                    <div class="bot-message">
-                                        <p>hello</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="pb-1">
-                            <div class="flex flex-col items-center px-6 pb-10 pt-4">
-                                <div class="w-full pb-2">
-                                    <div class="human-message">
-                                        <p>What is a GenerativeAI?</p>
-                                    </div>
-                                </div>
-
-                                <div class="w-full pb-2 reply-message">
-                                    <div class="bot-icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" height="22" viewBox="0 -960 960 960"
-                                            width="22">
-                                            <path
-                                                d="M147-376q-45 0-76-31.208Q40-438.417 40-483t31.208-75.792Q102.417-590 147-590v-123q0-24 18-42t42-18h166q0-45 31.208-76 31.209-31 75.792-31t75.792 31.208Q587-817.583 587-773h166q24 0 42 18t18 42v123q45 0 76 31.208 31 31.209 31 75.792t-31.208 75.792Q857.583-376 813-376v196q0 24-18 42t-42 18H207q-24 0-42-18t-18-42v-196Zm196.235-100Q360-476 371.5-487.735q11.5-11.736 11.5-28.5Q383-533 371.265-544.5q-11.736-11.5-28.5-11.5Q326-556 314.5-544.265q-11.5 11.736-11.5 28.5Q303-499 314.735-487.5q11.736 11.5 28.5 11.5Zm274 0Q634-476 645.5-487.735q11.5-11.736 11.5-28.5Q657-533 645.265-544.5q-11.736-11.5-28.5-11.5Q600-556 588.5-544.265q-11.5 11.736-11.5 28.5Q577-499 588.735-487.5q11.736 11.5 28.5 11.5ZM312-285h336v-60H312v60ZM207-180h546v-533H207v533Zm0 0v-533 533Z"
-                                                fill="#FFF" />
-                                        </svg>
-                                    </div>
-                                    <div class="bot-message">
-                                        <p>hello</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="pb-1">
-                            <div class="flex flex-col items-center px-6 pb-10 pt-4">
-                                <div class="w-full pb-2">
-                                    <div class="human-message">
-                                        <p>What is a GenerativeAI?</p>
-                                    </div>
-                                </div>
-
-                                <div class="w-full pb-2 reply-message">
-                                    <div class="bot-icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" height="22" viewBox="0 -960 960 960"
-                                            width="22">
-                                            <path
-                                                d="M147-376q-45 0-76-31.208Q40-438.417 40-483t31.208-75.792Q102.417-590 147-590v-123q0-24 18-42t42-18h166q0-45 31.208-76 31.209-31 75.792-31t75.792 31.208Q587-817.583 587-773h166q24 0 42 18t18 42v123q45 0 76 31.208 31 31.209 31 75.792t-31.208 75.792Q857.583-376 813-376v196q0 24-18 42t-42 18H207q-24 0-42-18t-18-42v-196Zm196.235-100Q360-476 371.5-487.735q11.5-11.736 11.5-28.5Q383-533 371.265-544.5q-11.736-11.5-28.5-11.5Q326-556 314.5-544.265q-11.5 11.736-11.5 28.5Q303-499 314.735-487.5q11.736 11.5 28.5 11.5Zm274 0Q634-476 645.5-487.735q11.5-11.736 11.5-28.5Q657-533 645.265-544.5q-11.736-11.5-28.5-11.5Q600-556 588.5-544.265q-11.5 11.736-11.5 28.5Q577-499 588.735-487.5q11.736 11.5 28.5 11.5ZM312-285h336v-60H312v60ZM207-180h546v-533H207v533Zm0 0v-533 533Z"
-                                                fill="#FFF" />
-                                        </svg>
-                                    </div>
-                                    <div class="bot-message">
-                                        <p>hello</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="pb-1">
-                            <div class="flex flex-col items-center px-6 pb-10 pt-4">
-                                <div class="w-full pb-2">
-                                    <div class="human-message">
-                                        <p>What is a GenerativeAI?</p>
-                                    </div>
-                                </div>
-
-                                <div class="w-full pb-2 reply-message">
-                                    <div class="bot-icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" height="22" viewBox="0 -960 960 960"
-                                            width="22">
-                                            <path
-                                                d="M147-376q-45 0-76-31.208Q40-438.417 40-483t31.208-75.792Q102.417-590 147-590v-123q0-24 18-42t42-18h166q0-45 31.208-76 31.209-31 75.792-31t75.792 31.208Q587-817.583 587-773h166q24 0 42 18t18 42v123q45 0 76 31.208 31 31.209 31 75.792t-31.208 75.792Q857.583-376 813-376v196q0 24-18 42t-42 18H207q-24 0-42-18t-18-42v-196Zm196.235-100Q360-476 371.5-487.735q11.5-11.736 11.5-28.5Q383-533 371.265-544.5q-11.736-11.5-28.5-11.5Q326-556 314.5-544.265q-11.5 11.736-11.5 28.5Q303-499 314.735-487.5q11.736 11.5 28.5 11.5Zm274 0Q634-476 645.5-487.735q11.5-11.736 11.5-28.5Q657-533 645.265-544.5q-11.736-11.5-28.5-11.5Q600-556 588.5-544.265q-11.5 11.736-11.5 28.5Q577-499 588.735-487.5q11.736 11.5 28.5 11.5ZM312-285h336v-60H312v60ZM207-180h546v-533H207v533Zm0 0v-533 533Z"
-                                                fill="#FFF" />
-                                        </svg>
-                                    </div>
-                                    <div class="bot-message">
-                                        <p>hello</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="pb-1">
-                            <div class="flex flex-col items-center px-6 pb-10 pt-4">
-                                <div class="w-full pb-2">
-                                    <div class="human-message">
-                                        <p>What is a GenerativeAI?</p>
-                                    </div>
-                                </div>
-
-                                <div class="w-full pb-2 reply-message">
-                                    <div class="bot-icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" height="22" viewBox="0 -960 960 960"
-                                            width="22">
-                                            <path
-                                                d="M147-376q-45 0-76-31.208Q40-438.417 40-483t31.208-75.792Q102.417-590 147-590v-123q0-24 18-42t42-18h166q0-45 31.208-76 31.209-31 75.792-31t75.792 31.208Q587-817.583 587-773h166q24 0 42 18t18 42v123q45 0 76 31.208 31 31.209 31 75.792t-31.208 75.792Q857.583-376 813-376v196q0 24-18 42t-42 18H207q-24 0-42-18t-18-42v-196Zm196.235-100Q360-476 371.5-487.735q11.5-11.736 11.5-28.5Q383-533 371.265-544.5q-11.736-11.5-28.5-11.5Q326-556 314.5-544.265q-11.5 11.736-11.5 28.5Q303-499 314.735-487.5q11.736 11.5 28.5 11.5Zm274 0Q634-476 645.5-487.735q11.5-11.736 11.5-28.5Q657-533 645.265-544.5q-11.736-11.5-28.5-11.5Q600-556 588.5-544.265q-11.5 11.736-11.5 28.5Q577-499 588.735-487.5q11.736 11.5 28.5 11.5ZM312-285h336v-60H312v60ZM207-180h546v-533H207v533Zm0 0v-533 533Z"
-                                                fill="#FFF" />
-                                        </svg>
-                                    </div>
-                                    <div class="bot-message">
-                                        <p>hello</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="pb-1">
-                            <div class="flex flex-col items-center px-6 pb-10 pt-4">
-                                <div class="w-full pb-2">
-                                    <div class="human-message">
-                                        <p>What is a GenerativeAI?</p>
-                                    </div>
-                                </div>
-
-                                <div class="w-full pb-2 reply-message">
-                                    <div class="bot-icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" height="22" viewBox="0 -960 960 960"
-                                            width="22">
-                                            <path
-                                                d="M147-376q-45 0-76-31.208Q40-438.417 40-483t31.208-75.792Q102.417-590 147-590v-123q0-24 18-42t42-18h166q0-45 31.208-76 31.209-31 75.792-31t75.792 31.208Q587-817.583 587-773h166q24 0 42 18t18 42v123q45 0 76 31.208 31 31.209 31 75.792t-31.208 75.792Q857.583-376 813-376v196q0 24-18 42t-42 18H207q-24 0-42-18t-18-42v-196Zm196.235-100Q360-476 371.5-487.735q11.5-11.736 11.5-28.5Q383-533 371.265-544.5q-11.736-11.5-28.5-11.5Q326-556 314.5-544.265q-11.5 11.736-11.5 28.5Q303-499 314.735-487.5q11.736 11.5 28.5 11.5Zm274 0Q634-476 645.5-487.735q11.5-11.736 11.5-28.5Q657-533 645.265-544.5q-11.736-11.5-28.5-11.5Q600-556 588.5-544.265q-11.5 11.736-11.5 28.5Q577-499 588.735-487.5q11.736 11.5 28.5 11.5ZM312-285h336v-60H312v60ZM207-180h546v-533H207v533Zm0 0v-533 533Z"
-                                                fill="#FFF" />
-                                        </svg>
-                                    </div>
-                                    <div class="bot-message">
-                                        <p>hello</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="pb-1">
-                            <div class="flex flex-col items-center px-6 pb-10 pt-4">
-                                <div class="w-full pb-2">
-                                    <div class="human-message">
-                                        <p>What is a GenerativeAI?</p>
-                                    </div>
-                                </div>
-
-                                <div class="w-full pb-2 reply-message">
-                                    <div class="bot-icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" height="22" viewBox="0 -960 960 960"
-                                            width="22">
-                                            <path
-                                                d="M147-376q-45 0-76-31.208Q40-438.417 40-483t31.208-75.792Q102.417-590 147-590v-123q0-24 18-42t42-18h166q0-45 31.208-76 31.209-31 75.792-31t75.792 31.208Q587-817.583 587-773h166q24 0 42 18t18 42v123q45 0 76 31.208 31 31.209 31 75.792t-31.208 75.792Q857.583-376 813-376v196q0 24-18 42t-42 18H207q-24 0-42-18t-18-42v-196Zm196.235-100Q360-476 371.5-487.735q11.5-11.736 11.5-28.5Q383-533 371.265-544.5q-11.736-11.5-28.5-11.5Q326-556 314.5-544.265q-11.5 11.736-11.5 28.5Q303-499 314.735-487.5q11.736 11.5 28.5 11.5Zm274 0Q634-476 645.5-487.735q11.5-11.736 11.5-28.5Q657-533 645.265-544.5q-11.736-11.5-28.5-11.5Q600-556 588.5-544.265q-11.5 11.736-11.5 28.5Q577-499 588.735-487.5q11.736 11.5 28.5 11.5ZM312-285h336v-60H312v60ZM207-180h546v-533H207v533Zm0 0v-533 533Z"
-                                                fill="#FFF" />
-                                        </svg>
-                                    </div>
-                                    <div class="bot-message">
-                                        <p>hello</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="pb-1">
-                            <div class="flex flex-col items-center px-6 pb-10 pt-4">
-                                <div class="w-full pb-2">
-                                    <div class="human-message">
-                                        <p>What is a GenerativeAI?</p>
-                                    </div>
-                                </div>
-
-                                <div class="w-full pb-2 reply-message">
-                                    <div class="bot-icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" height="22" viewBox="0 -960 960 960"
-                                            width="22">
-                                            <path
-                                                d="M147-376q-45 0-76-31.208Q40-438.417 40-483t31.208-75.792Q102.417-590 147-590v-123q0-24 18-42t42-18h166q0-45 31.208-76 31.209-31 75.792-31t75.792 31.208Q587-817.583 587-773h166q24 0 42 18t18 42v123q45 0 76 31.208 31 31.209 31 75.792t-31.208 75.792Q857.583-376 813-376v196q0 24-18 42t-42 18H207q-24 0-42-18t-18-42v-196Zm196.235-100Q360-476 371.5-487.735q11.5-11.736 11.5-28.5Q383-533 371.265-544.5q-11.736-11.5-28.5-11.5Q326-556 314.5-544.265q-11.5 11.736-11.5 28.5Q303-499 314.735-487.5q11.736 11.5 28.5 11.5Zm274 0Q634-476 645.5-487.735q11.5-11.736 11.5-28.5Q657-533 645.265-544.5q-11.736-11.5-28.5-11.5Q600-556 588.5-544.265q-11.5 11.736-11.5 28.5Q577-499 588.735-487.5q11.736 11.5 28.5 11.5ZM312-285h336v-60H312v60ZM207-180h546v-533H207v533Zm0 0v-533 533Z"
-                                                fill="#FFF" />
-                                        </svg>
-                                    </div>
-                                    <div class="bot-message">
-                                        <p>hello</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="pb-1">
-                            <div class="flex flex-col items-center px-6 pb-10 pt-4">
-                                <div class="w-full pb-2">
-                                    <div class="human-message">
-                                        <p>What is a GenerativeAI?</p>
-                                    </div>
-                                </div>
-
-                                <div class="w-full pb-2 reply-message">
-                                    <div class="bot-icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" height="22" viewBox="0 -960 960 960"
-                                            width="22">
-                                            <path
-                                                d="M147-376q-45 0-76-31.208Q40-438.417 40-483t31.208-75.792Q102.417-590 147-590v-123q0-24 18-42t42-18h166q0-45 31.208-76 31.209-31 75.792-31t75.792 31.208Q587-817.583 587-773h166q24 0 42 18t18 42v123q45 0 76 31.208 31 31.209 31 75.792t-31.208 75.792Q857.583-376 813-376v196q0 24-18 42t-42 18H207q-24 0-42-18t-18-42v-196Zm196.235-100Q360-476 371.5-487.735q11.5-11.736 11.5-28.5Q383-533 371.265-544.5q-11.736-11.5-28.5-11.5Q326-556 314.5-544.265q-11.5 11.736-11.5 28.5Q303-499 314.735-487.5q11.736 11.5 28.5 11.5Zm274 0Q634-476 645.5-487.735q11.5-11.736 11.5-28.5Q657-533 645.265-544.5q-11.736-11.5-28.5-11.5Q600-556 588.5-544.265q-11.5 11.736-11.5 28.5Q577-499 588.735-487.5q11.736 11.5 28.5 11.5ZM312-285h336v-60H312v60ZM207-180h546v-533H207v533Zm0 0v-533 533Z"
-                                                fill="#FFF" />
-                                        </svg>
-                                    </div>
-                                    <div class="bot-message">
-                                        <p>hello</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="pb-1">
-                            <div class="flex flex-col items-center px-6 pb-10 pt-4">
-                                <div class="w-full pb-2">
-                                    <div class="human-message">
-                                        <p>What is a GenerativeAI?</p>
-                                    </div>
-                                </div>
-
-                                <div class="w-full pb-2 reply-message">
-                                    <div class="bot-icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" height="22" viewBox="0 -960 960 960"
-                                            width="22">
-                                            <path
-                                                d="M147-376q-45 0-76-31.208Q40-438.417 40-483t31.208-75.792Q102.417-590 147-590v-123q0-24 18-42t42-18h166q0-45 31.208-76 31.209-31 75.792-31t75.792 31.208Q587-817.583 587-773h166q24 0 42 18t18 42v123q45 0 76 31.208 31 31.209 31 75.792t-31.208 75.792Q857.583-376 813-376v196q0 24-18 42t-42 18H207q-24 0-42-18t-18-42v-196Zm196.235-100Q360-476 371.5-487.735q11.5-11.736 11.5-28.5Q383-533 371.265-544.5q-11.736-11.5-28.5-11.5Q326-556 314.5-544.265q-11.5 11.736-11.5 28.5Q303-499 314.735-487.5q11.736 11.5 28.5 11.5Zm274 0Q634-476 645.5-487.735q11.5-11.736 11.5-28.5Q657-533 645.265-544.5q-11.736-11.5-28.5-11.5Q600-556 588.5-544.265q-11.5 11.736-11.5 28.5Q577-499 588.735-487.5q11.736 11.5 28.5 11.5ZM312-285h336v-60H312v60ZM207-180h546v-533H207v533Zm0 0v-533 533Z"
-                                                fill="#FFF" />
-                                        </svg>
-                                    </div>
-                                    <div class="bot-message">
-                                        <p>hello</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="pb-1">
-                            <div class="flex flex-col items-center px-6 pb-10 pt-4">
-                                <div class="w-full pb-2">
-                                    <div class="human-message">
-                                        <p>What is a GenerativeAI?</p>
-                                    </div>
-                                </div>
-
-                                <div class="w-full pb-2 reply-message">
-                                    <div class="bot-icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" height="22" viewBox="0 -960 960 960"
-                                            width="22">
-                                            <path
-                                                d="M147-376q-45 0-76-31.208Q40-438.417 40-483t31.208-75.792Q102.417-590 147-590v-123q0-24 18-42t42-18h166q0-45 31.208-76 31.209-31 75.792-31t75.792 31.208Q587-817.583 587-773h166q24 0 42 18t18 42v123q45 0 76 31.208 31 31.209 31 75.792t-31.208 75.792Q857.583-376 813-376v196q0 24-18 42t-42 18H207q-24 0-42-18t-18-42v-196Zm196.235-100Q360-476 371.5-487.735q11.5-11.736 11.5-28.5Q383-533 371.265-544.5q-11.736-11.5-28.5-11.5Q326-556 314.5-544.265q-11.5 11.736-11.5 28.5Q303-499 314.735-487.5q11.736 11.5 28.5 11.5Zm274 0Q634-476 645.5-487.735q11.5-11.736 11.5-28.5Q657-533 645.265-544.5q-11.736-11.5-28.5-11.5Q600-556 588.5-544.265q-11.5 11.736-11.5 28.5Q577-499 588.735-487.5q11.736 11.5 28.5 11.5ZM312-285h336v-60H312v60ZM207-180h546v-533H207v533Zm0 0v-533 533Z"
-                                                fill="#FFF" />
-                                        </svg>
-                                    </div>
-                                    <div class="bot-message">
-                                        <p>hello</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <chatMain></chatMain>
                 </main>
 
                 <footer class="bottom-0 sticky bg-white">
-                    <div class="input-container">
-                        <textarea class="input-message" dir="auto" rows="1"
-                            placeholder="Write your message..."></textarea>
-                        <button class="send-button">Send</button>
-                    </div>
+                    <form class="relative">
+                        <div class="flex overflow-hidden rounded-full shadow-2xl">
+                            <div class=" inset-y-0 left-0 flex items-center m-3 pl-3">
+                                <div class="grew items-center">
+                                    <button type="button"
+                                        class="-m-2.5 flex h-10 w-10 items-center justify-center rounded-full text-gray-400 hover:text-gray-500">
+                                        <PaperClipIcon class="h-5 w-5" aria-hidden="true" />
+                                        <span class="sr-only">Attach a file</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="grew w-full items-center">
+                                <label for="comment" class="sr-only">Add your comment</label>
+                                <textarea rows="2" name="comment" id="comment"
+                                    class="block w-full resize-none border-0 bg-transparent m-1 px-3 py-2 text-gray-900 placeholder:text-gray-400 sm:text-sm sm:leading-6"
+                                    placeholder="Add your comment..." />
+                            </div>
+
+                            <div class="flex-none w-10 h-10 m-3">
+                                <button type="submit"
+                                    class="inline-flex items-center rounded-full bg-blue-600 p-2 text-sm text-white shadow hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Send</button>
+                            </div>
+
+                        </div>
+                        <!-- <div class="absolute inset-x-0 bottom-0 flex justify-between py-2 px-2">
+                            <div class="grew items-center">
+                                <button type="button"
+                                    class="-m-2.5 flex h-10 w-10 items-center justify-center rounded-full text-gray-400 hover:text-gray-500">
+                                    <PaperClipIcon class="h-5 w-5" aria-hidden="true" />
+                                    <span class="sr-only">Attach a file</span>
+                                </button>
+                            </div>
+                            <div class="flex-none w-10 h-10 mr-3">
+                                <button type="submit"
+                                    class="inline-flex items-center rounded-full bg-blue-600 p-2 text-sm text-white shadow hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Send</button>
+                            </div>
+                        </div> -->
+                    </form>
                 </footer>
             </div>
         </div>
@@ -553,13 +268,14 @@ import {
     HomeIcon,
     XMarkIcon,
 } from "@heroicons/vue/24/outline";
-import { ChevronDownIcon } from "@heroicons/vue/20/solid";
-
+import { ChevronDownIcon, PaperClipIcon } from "@heroicons/vue/20/solid";
+import chatMain from "../components/topic/chat-main.vue";
 //对话
-const chatSession = [
+const chatSession = ref([
     { name: "Team", nowTime: "昨天", chatHistory: [{}], current: false },
     { name: "Projects", nowTime: "今天", chatHistory: [{}], current: false },
-];
+]);
+
 
 const userNavigation = [
     { name: "Your profile", href: "#" },
@@ -568,15 +284,18 @@ const userNavigation = [
 
 const sidebarOpen = ref(false);
 
-const addChat = () => {
+function addChat() {
     console.log("addChat");
-    chatSession.push({
+
+    chatSession.value.unshift({
         name: "Team",
         nowTime: "昨天",
         chatHistory: [{}],
         current: false,
     });
 };
+
+
 </script>
 
 <style scoped>

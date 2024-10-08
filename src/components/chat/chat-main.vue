@@ -57,13 +57,13 @@
 
           <div class="grew w-full items-center">
             <label for="comment" class="sr-only">Add your comment</label>
-            <textarea rows="2" name="comment" id="comment"
+            <textarea rows="2" name="comment" id="comment" v-model="sendMessage.question"
               class="block w-full resize-none border-0 bg-transparent m-1 px-3 py-2 text-gray-900 placeholder:text-gray-400 sm:text-sm sm:leading-6"
               placeholder="Add your comment..." />
           </div>
 
           <div class="flex-none w-10 h-10 m-3">
-            <button type="submit"
+            <button @click="send"
               class="inline-flex items-center rounded-full bg-blue-600 p-2 text-sm text-white shadow hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Send</button>
           </div>
         </div>
@@ -71,11 +71,12 @@
     </footer>
   </div>
 </template>
+
 <script setup>
+import { reactive, ref } from "vue";
+import { PaperClipIcon } from "@heroicons/vue/20/solid";
 
-import { ref } from "vue";
-
-const chat = ref({
+const chat = reactive({
   username: "kaifamiao",
   list: 1,
   messages: [{
@@ -96,12 +97,24 @@ const chat = ref({
 
 const sendMessage = ref({
   question: "",
-  answer: "",
+  answer: "你好👋，有什么我可以帮你～",
   selectModel: "",
   selectPrompt: "",
   selectKB: "",
 })
 
+function send () {
+  console.log("send");
+  
+  chat.messages.push({
+    question: sendMessage.value.question,
+    answer: sendMessage.value.answer
+  })
+  
+  console.log("chat",chat);
+  sendMessage.value.question = ""
+  
+}
 </script>
 
 <style scoped>

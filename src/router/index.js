@@ -27,8 +27,8 @@ const routes = [
         component: () => import('../views/Login.vue')
     },
     {
-        path: '/topic',
-        component: () => import('../views/Topic.vue')
+        path: '/chat',
+        component: () => import('../views/Chat.vue')
     },
     
     {
